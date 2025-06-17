@@ -29,7 +29,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gradient-to-b from-black-50 to-black px-4 py-10 text-gray-800">
       {/* Titre */}
       <div className="mt-20 text-center mb-14">
-        <h1 className="text-5xl font-extrabold text-blue-800">Contactez-nous</h1>
+        <h1 className="text-5xl font-extrabold text-orange-800">Contactez-nous</h1>
       </div>
 
       {/* Contenu principal */}
@@ -103,13 +103,13 @@ export default function ContactPage() {
           ></textarea>
           <button
             type="submit"
-            className="bg-blue-800 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-all"
+            className="bg-orange-800 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded transition-all"
           >
             Envoyer
           </button>
 
           {confirmation && (
-            <p className="text-green-600 mt-2 font-medium animate-pulse">
+            <p className="text-green-800 mt-2 font-medium animate-pulse">
               ✅ Message envoyé avec succès !
             </p>
           )}
@@ -118,7 +118,7 @@ export default function ContactPage() {
 
       {/* Carte Google Maps Douala */}
       <div className="mt-16 max-w-6xl mx-auto">
-        <h2 className="text-2xl font-bold text-blue-800 mb-4">📍 Nous localiser à Douala</h2>
+        <h2 className="text-2xl font-bold text-orange-800 mb-4">📍 Nous localiser à Douala</h2>
         <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-blue-100">
           <iframe
             title="Carte de Douala, Cameroun"
