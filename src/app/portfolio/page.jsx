@@ -19,15 +19,15 @@ const projects = [
     technologies: ['React', 'Node.js', 'Chart.js'],
     image: '/a5.jpg',
     demo: 'https://bibleverse-nine.vercel.app/',
-    github: 'https://github.com/username/dashboard'
+    github: 'https://github.com/aboh505/bibliaOnline.git'
   },
   {
-    title: 'Blog Personnel',
+    title: 'Portfolio Personnel',
     description: 'Plateforme de blogging moderne avec système de gestion de contenu et interface d\'administration',
     technologies: ['Next.js', 'Prisma', 'Tailwind CSS'],
     image: '/profil.jpeg',
     demo: 'https://portfolio-orcin-theta-45.vercel.app/',
-    github: 'https://github.com/username/blog'
+    github: 'https://github.com/aboh505/portfolio.git'
   },
   {
     title: 'Application ',
@@ -35,15 +35,15 @@ const projects = [
     technologies: ['React', 'Next.js', 'MongoDB'],
     image: '/a6.jpg',
     demo: 'https://easybank-beryl-six.vercel.app/',
-    github: 'https://github.com/username/booking'
+    github: 'https://github.com/aboh505/easybank.git'
   },
   {
-    title: 'Portfolio Personnel',
+    title: 'Blog Personnel',
     description: 'Site movies responsive avec animations et système de galerie de films',
     technologies: ['Next.js', 'Framer Motion', 'Tailwind CSS'],
     image: '/m2.jpg',
     demo: 'https://aboh-movies-9zlo.vercel.app',
-    github: 'https://github.com/username/portfolio'
+    github: 'https://github.com/aboh505/AbohMovies.git'
   },
    {
     title: 'Galery',
@@ -51,7 +51,7 @@ const projects = [
     technologies: ['Next.js', 'Framer Motion', 'Tailwind CSS'],
     image: '/b4.jpg',
     demo: 'https://la-bonjournaise-usyd.vercel.app/',
-    github: 'https://github.com/username/portfolio'
+    github: 'https://github.com/aboh505/LaBonjournaise.git'
   },
   
 ];
@@ -132,5 +132,7 @@ export default function Portfolio() {
         </div>
       </section>
     </main>
+
+    
   );
 }
