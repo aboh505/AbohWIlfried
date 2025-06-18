@@ -62,6 +62,14 @@ export default function Navbar() {
               Accueil
             </Link>
           </li>
+            <li>
+            <Link 
+              href="/about"
+              className={`text-gray-600 hover:text-orange-500 transition-colors duration-200 ${pathname === '/about' ? 'text-orange-500' : ''}`}
+            >
+              À propos
+            </Link>
+          </li>
           <li>
             <Link 
               href="/services"
@@ -78,14 +86,7 @@ export default function Navbar() {
               Portfolio
             </Link>
           </li>
-          <li>
-            <Link 
-              href="/about"
-              className={`text-gray-600 hover:text-orange-500 transition-colors duration-200 ${pathname === '/about' ? 'text-orange-500' : ''}`}
-            >
-              À propos
-            </Link>
-          </li>
+        
           <li className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}

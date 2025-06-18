@@ -20,7 +20,7 @@ const faqs = [
 	{
 		question: 'Quelles technologies utilises-tu ?',
 		answer:
-			"Je travaille principalement avec React, Node.js, et les technologies modernes du web. Je peux m'adapter à vos besoins spécifiques.",
+			"Je travaille principalement avec Next.js, Node.js, et les technologies modernes du web. Je peux m'adapter à vos besoins spécifiques.",
 		category: 'Technologies',
 	},
 	{
