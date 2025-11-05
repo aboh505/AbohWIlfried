@@ -5,12 +5,7 @@ import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 const faqs = [
-	{
-		question: 'Peux-tu travailler en freelance ?',
-		answer:
-			'Oui, je suis disponible pour des missions ponctuelles ou longues. Je peux travailler à distance ou sur site selon vos besoins.',
-		category: 'Disponibilité',
-	},
+	
 	{
 		question: 'Quels sont tes tarifs ?',
 		answer:
@@ -53,7 +48,7 @@ export default function FAQ() {
 						FAQ
 					</motion.h1>
 
-					<div className="flex flex-col gap-8">
+					<div className="flex flex-col mt-12 gap-8">
 						{/* FAQ Items */}
 						{faqs.map((faq, index) => (
 							<motion.div

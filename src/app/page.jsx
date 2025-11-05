@@ -5,6 +5,23 @@ import { Mail, Phone, ArrowRight, Star, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
+
+const skills = [
+  { name: 'React', level: 60, icon: 'react' },
+  { name: 'Next.js', level: 90, icon: 'nextjs' },
+  { name: 'Node.js', level: 80, icon: 'node' },
+  { name: 'JavaScript', level: 75, icon: 'typescript' },
+  { name: 'Tailwind CSS', level: 85, icon: 'tailwind' },
+  { name: 'MongoDB', level: 70, icon: 'mongodb' },
+];
+
+const services = [
+  { name: 'Web Design', description: 'Modern and responsive design solutions' },
+  { name: 'Fullstack Development', description: 'Complete web application development' },
+  { name: 'API Integration', description: 'Seamless integration with third-party services' },
+  { name: 'Performance Optimization', description: 'Fast and optimized web applications' },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#0D0D14] via-[#181824] to-[#23233a] text-white font-sans">
@@ -49,79 +66,75 @@ export default function Home() {
             <p className="flex items-center gap-2"><Instagram size={16} /> @depayy joseph</p>
           </div>
           <div className="space-x-4">
-            <Link href="/contact" className="bg-orange-500 px-4 py-2 rounded-md hover:bg-orange-600 transition-all duration-300 shadow-lg">
-              Me contacter
-            </Link>
+
             <Link href="/resume" className="border border-orange-500 px-4 py-2 rounded-md hover:bg-orange-500 hover:text-white transition-all duration-300">
-              Télécharger mon CV
+              Voir mon CV
             </Link>
           </div>
         </div>
       </motion.section>
 
-      {/* Skills */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.1 }}
-        viewport={{ once: true }}
-        className="text-center py-20 px-6 md:px-20"
-      >
-        <h2 className="text-3xl font-semibold mb-2">Mes <span className="text-orange-500">Compétences</span></h2>
-        <p className="text-gray-300 mb-12 max-w-2xl mx-auto">Découvrez les technologies et outils que je maîtrise pour réaliser vos projets web.</p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {['Figma', 'WordPress', 'Développement Web', 'Web Design', 'Sketch', 'Xd', 'Montage Vidéo', 'Application Mobile'].map((skill, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.05 }}
-              viewport={{ once: true }}
-              className="bg-gray-800/80 p-6 rounded-lg shadow-lg"
-            >
-              <p className="text-xl font-bold mb-2">{skill}</p>
-              <div className="bg-gray-700 h-2 rounded-full overflow-hidden">
-                <div className="bg-orange-500 h-2 w-[90%]"></div>
-              </div>
-              <p className="text-sm text-orange-400 mt-2">{90 + i % 10}%</p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.section>
-
       {/* Services */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="text-center py-20 px-6 md:px-20"
-      >
-        <h2 className="text-3xl font-semibold mb-2">Mes <span className="text-orange-500">Services</span></h2>
-        <p className="text-gray-300 mb-12 max-w-2xl mx-auto">Création de sites web, design UI/UX, développement d'applications et bien plus encore.</p>
-        {/* <div className="grid md:grid-cols-3 gap-6">
-          {["UI/UX Design", "Web Design", "Développement Web"].map((service, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
-              viewport={{ once: true }}
-              className="bg-gray-800/80 rounded-xl p-4 shadow-lg hover:scale-[1.025] transition-transform duration-300"
-            >
-              <Image src="/portfolio.jpg" alt={service} width={300} height={200} className="rounded-md" />
-              <div className="flex justify-between items-center mt-4">
-                <p className="text-lg font-semibold">{service}</p>
-                <ArrowRight className="text-orange-500" />
-              </div>
-            </motion.div>
-          ))}
-        </div> */}
-        <Link href="/services" className="mt-10 bg-orange-500 px-6 py-2 rounded-md hover:bg-orange-600 transition-all duration-300 shadow-lg inline-block">
-          Voir tous les services
-        </Link>
-      </motion.section>
 
+ <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
+            Mes Compétences
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {skills.map((skill, index) => (
+              <motion.div
+                key={skill.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="rounded-2xl p-6 bg-white/10 shadow-xl border border-white/10"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-lg font-semibold text-white">
+                    {skill.name}
+                  </h3>
+                  <span className="text-orange-400 font-bold">{skill.level}%</span>
+                </div>
+                <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
+                  <motion.div
+                    className="bg-gradient-to-r from-orange-400 to-pink-500 h-3 rounded-full shadow-lg"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${skill.level}%` }}
+                    transition={{ duration: 1.2, delay: 0.2 + index * 0.1, ease: 'easeOut' }}
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+  {/* Services Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
+            Services Proposés
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <motion.div
+                key={service.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="card rounded-lg p-6 hover:shadow-lg transition-shadow"
+              >
+                <h3 className="text-xl font-semibold text-white-600 mb-2">
+                  {service.name}
+                </h3>
+                <p className="text-gray-600">{service.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
       {/* Testimonials */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
@@ -133,7 +146,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-2">Ce que disent mes <span className="text-orange-500">clients</span></h2>
         <p className="text-gray-300 mb-12 max-w-2xl mx-auto">Ils m'ont fait confiance pour leurs projets web. Voici leurs retours.</p>
         <div className="grid md:grid-cols-3 gap-6">
-          {["Robert J.", "Janice Z.", "Justin B."].map((name, i) => (
+          {["Latiffa F.", "Serge T.", "Ebong T."].map((name, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}

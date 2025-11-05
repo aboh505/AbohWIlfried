@@ -8,7 +8,7 @@ const projects = [
   {
     title: 'E-commerce Dashboard',
     description: 'Plateforme de commerce électronique complète avec catalogue de produits, panier d\'achat et intégration de paiement',
-    technologies: ['Next.js', 'MongoDB', 'Stripe'],
+    technologies: ['Next.js', 'MongoDB', 'Tailwind CSS'],
     image: '/b10.jpg',
     demo: 'https://dashboarddummy-eight.vercel.app/',
     github: 'https://github.com/username/ecommerce'
@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'Bible media PLatform',
     description: 'Tableau de bord interactif avec analyses en temps réel et suivi de l\'engagement des utilisateurs',
-    technologies: ['React', 'Node.js', 'Chart.js'],
+    technologies: ['React', 'Tailwind.css', ],
     image: '/a5.jpg',
     demo: 'https://bibleverse-nine.vercel.app/',
     github: 'https://github.com/aboh505/bibliaOnline.git'
@@ -24,15 +24,15 @@ const projects = [
   {
     title: 'Portfolio Personnel',
     description: 'Plateforme de blogging moderne avec système de gestion de contenu et interface d\'administration',
-    technologies: ['Next.js', 'Prisma', 'Tailwind CSS'],
+    technologies: ['Next.js', 'Tailwind CSS'],
     image: '/profil.jpeg',
-    demo: 'https://portfolio-orcin-theta-45.vercel.app/',
-    github: 'https://github.com/aboh505/portfolio.git'
+    demo: 'https://quizsphere-anr4.vercel.app',
+    github: 'https://github.com/aboh505/Quizsphere.git'
   },
   {
     title: 'Application ',
     description: 'Système de gestion des disponibilités bancaires',
-    technologies: ['React', 'Next.js', 'MongoDB'],
+    technologies: ['TypeScript', 'Next.js', 'Tailwind CSS'],
     image: '/a6.jpg',
     demo: 'https://easybank-beryl-six.vercel.app/',
     github: 'https://github.com/aboh505/easybank.git'

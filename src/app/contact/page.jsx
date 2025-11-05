@@ -29,7 +29,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gradient-to-b from-black-50 to-black px-4 py-10 text-gray-800">
       {/* Titre */}
       <div className="mt-20 text-center mb-14">
-        <h1 className="text-5xl font-extrabold text-orange-500">Contactez-nous</h1>
+        <h1 className="text-5xl font-extrabold text-orange-500">Contactez-moi</h1>
       </div>
 
       {/* Contenu principal */}
@@ -39,7 +39,7 @@ export default function ContactPage() {
           <div>
             <h2 className="text-3xl font-bold mb-2">Entrer en contact</h2>
             <p className="text-gray-600">
-              Notre équipe est disponible pour répondre à toutes vos questions dans les plus brefs délais.
+              Disponible pour répondre à toutes vos questions dans les plus brefs délais.
             </p>
           </div>
           <div className="space-y-3 text-lg">
@@ -116,20 +116,7 @@ export default function ContactPage() {
         </form>
       </div>
 
-      {/* Carte Google Maps Douala */}
-      <div className="mt-16 max-w-6xl mx-auto">
-        <h2 className="text-2xl font-bold text-orange-500 mb-4">📍 Nous localiser à Douala</h2>
-        <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-lg border border-blue-100">
-          <iframe
-            title="Carte de Douala, Cameroun"
-            src="https://www.google.com/maps?q=Douala+Cameroun&output=embed"
-            className="w-full h-full"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
+     
     </div>
   );
 }

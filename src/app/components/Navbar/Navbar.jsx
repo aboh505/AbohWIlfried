@@ -53,7 +53,7 @@ export default function Navbar() {
         </div>
 
         {/* Menu */}
-        <ul className="hidden md:flex gap-6 items-center font-medium text-sm">
+        <ul className="hidden font-bold md:flex gap-6 items-center font-medium text-sm">
           <li>
             <Link 
               href="/" 
@@ -62,28 +62,12 @@ export default function Navbar() {
               Accueil
             </Link>
           </li>
-            <li>
-            <Link 
-              href="/about"
-              className={`text-gray-600 hover:text-orange-500 transition-colors duration-200 ${pathname === '/about' ? 'text-orange-500' : ''}`}
-            >
-              À propos
-            </Link>
-          </li>
-          <li>
-            <Link 
-              href="/services"
-              className={`text-gray-600 hover:text-orange-500 transition-colors duration-200 ${pathname === '/services' ? 'text-orange-500' : ''}`}
-            >
-              Services
-            </Link>
-          </li>
           <li>
             <Link 
               href="/portfolio"
               className={`text-gray-600 hover:text-orange-500 transition-colors duration-200 ${pathname === '/portfolio' ? 'text-orange-500' : ''}`}
             >
-              Portfolio
+              Projets
             </Link>
           </li>
         
