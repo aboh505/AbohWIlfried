@@ -15,10 +15,14 @@ export default function Footer() {
     <footer className="bg-[#0D0D14] text-white pt-12 pb-8 px-4">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
         {/* Branding */}
-        <div>
-          <h2 className="text-2xl font-bold text-orange-500">ABOH</h2>
-          
-        </div>
+        <Link
+            href="/"
+            className="text-4xl font-bold text-orange-500 hover:text-orange-400 transition-transform duration-300 
+             hover:rotate-3 hover:scale-105 drop-shadow-[3px_3px_3px_rgba(0,0,0,0.3)]"
+          >
+            ABOH
+          </Link>
+
 
         {/* Navigation */}
         <div>

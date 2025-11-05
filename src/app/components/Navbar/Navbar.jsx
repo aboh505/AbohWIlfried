@@ -44,33 +44,40 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         > */}
-          {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="bg-orange-500 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center">
-              AW
-            </div>
-          <Link href="/" className="text-2xl font-bold text-orange-500">ABOH</Link>
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+
+          <Link
+            href="/"
+            className="text-4xl font-bold text-orange-500 hover:text-orange-400 transition-transform duration-300 
+             hover:rotate-3 hover:scale-105 drop-shadow-[3px_3px_3px_rgba(0,0,0,0.3)]"
+          >
+            ABOH
+          </Link>
+
+
+
         </div>
 
         {/* Menu */}
         <ul className="hidden font-bold md:flex gap-6 items-center font-medium text-sm">
           <li>
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className={`text-gray-600 hover:text-orange-500 transition-colors duration-200 ${pathname === '/' ? 'text-orange-500' : ''}`}
             >
               Accueil
             </Link>
           </li>
           <li>
-            <Link 
+            <Link
               href="/portfolio"
               className={`text-gray-600 hover:text-orange-500 transition-colors duration-200 ${pathname === '/portfolio' ? 'text-orange-500' : ''}`}
             >
               Projets
             </Link>
           </li>
-        
+
           <li className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
