@@ -131,7 +131,7 @@ export default function Navbar() {
 
         {/* Call to action */}
         <Link
-          href="/contact"
+          href="/"
           className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium shadow-sm"
         >
           Me contacter <ArrowUpRight size={16} />
