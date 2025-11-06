@@ -40,8 +40,8 @@ export default function Resume() {
               <div className="p-6">
                 <div className="mb-6">
                   <h3 className="font-semibold mb-2">BTS1 en DOT</h3>
-                  <p className="text-sm text-gray-400 mb-2">Université de la Cote • 2012 - 2023</p>
-                  <p className="mb-4">Spécialisation en Douane et Transit</p>
+                  <p className="text-sm text-gray-400 mb-2">Université de la Cote • 2022 - 2023</p>
+                  <p className="mb-4">Spécialisation en Douane Transit</p>
                   <div className="flex items-center gap-2">
                     <span className="text-orange-500">⭐</span>
                     <span className="text-gray-400">Mention Bien</span>
@@ -49,7 +49,7 @@ export default function Resume() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2"> Informatique</h3>
-                  <p className="text-sm text-gray-400 mb-2">Seven Advanced Academy • 2023 - 2024</p>
+                  <p className="text-sm text-gray-400 mb-2">Seven Advanced Academy • 2023 - 2025</p>
                   <p className="mb-4">Focus sur le développement web et la programmation</p>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function Resume() {
                   </ul>
                   <div className="flex items-center gap-2">
                     <span className="text-orange-500">🛠️</span>
-                    <span className="text-gray-400">React, CSS</span>
+                    <span className="text-gray-400">Next.js, CSS</span>
                   </div>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function Resume() {
                       <div className="flex items-center justify-between">
                         <span>Anglais</span>
                         <div className="w-full bg-gray-200 rounded-full h-2.5">
-                          <div className="bg-orange-500 h-2.5 rounded-full" style={{ width: '90%' }}></div>
+                          <div className="bg-orange-500 h-2.5 rounded-full" style={{ width: '30%' }}></div>
                         </div>
                       </div>
                     </div>
